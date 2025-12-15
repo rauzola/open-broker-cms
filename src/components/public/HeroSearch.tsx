@@ -102,7 +102,7 @@ export function HeroSearch({ variant = 'popular' }: HeroSearchProps) {
                     <div className="relative">
                         <Home className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-blue-500 z-10 pointer-events-none" />
                         <Select value={propertyType} onValueChange={setPropertyType}>
-                            <SelectTrigger className="h-12 pl-10 bg-slate-50 border-slate-200 focus:ring-blue-500 rounded-lg text-slate-900 font-medium w-full relative">
+                            <SelectTrigger className="!h-12 pl-10 bg-slate-50 border-slate-200 focus:ring-blue-500 rounded-lg text-slate-900 font-medium w-full relative">
                                 <SelectValue placeholder="Tipo de Imóvel" />
                             </SelectTrigger>
                             <SelectContent>
@@ -134,7 +134,7 @@ export function HeroSearch({ variant = 'popular' }: HeroSearchProps) {
                     <div className="relative">
                         <DollarSign className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-blue-500 z-10 pointer-events-none" />
                         <Select value={priceRange} onValueChange={setPriceRange}>
-                            <SelectTrigger className="h-12 pl-10 bg-slate-50 border-slate-200 focus:ring-blue-500 rounded-lg text-slate-900 font-medium w-full relative">
+                            <SelectTrigger className="!h-12 pl-10 bg-slate-50 border-slate-200 focus:ring-blue-500 rounded-lg text-slate-900 font-medium w-full relative">
                                 <SelectValue placeholder="Faixa de Preço" />
                             </SelectTrigger>
                             <SelectContent>

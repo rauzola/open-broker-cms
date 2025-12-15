@@ -102,9 +102,15 @@ export default async function LuxuryPropertyPage({ params }: { params: Promise<{
                                 <hr className="border-white/10" />
                                 <p className="text-zinc-400 italic font-serif text-sm">"I am at your disposal for a private showing of this masterpiece."</p>
 
-                                <Button className="w-full h-14 bg-white text-black hover:bg-[oklch(0.85_0.15_85)] hover:text-white transition-all uppercase tracking-widest font-medium text-xs rounded-none">
-                                    Inquire
-                                </Button>
+                                <Link
+                                    href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}?text=${encodeURIComponent(`Olá, vim pelo site e gostaria de saber mais sobre o imóvel ID: ${property.id}`)}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <Button className="w-full h-14 bg-white text-black hover:bg-[oklch(0.85_0.15_85)] hover:text-white transition-all uppercase tracking-widest font-medium text-xs rounded-none">
+                                        Inquire
+                                    </Button>
+                                </Link>
                                 <Button variant="outline" className="w-full h-14 border-white/20 text-white hover:bg-white/5 uppercase tracking-widest font-medium text-xs rounded-none">
                                     Brochure
                                 </Button>

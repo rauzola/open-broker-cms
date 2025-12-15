@@ -12,7 +12,7 @@ export default function PopularContactPage() {
 
     const handleWhatsapp = () => {
         const text = `Ola Raul vindo site da imobiliaria url ${window.location.href}. Nome: ${formData.name}. Msg: ${formData.message}`;
-        const url = `https://wa.me/5544991658351?text=${encodeURIComponent(text)}`;
+        const url = `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
         window.open(url, '_blank');
     };
 

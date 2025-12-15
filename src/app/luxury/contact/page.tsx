@@ -12,7 +12,7 @@ export default function LuxuryContactPage() {
 
     const handleWhatsapp = () => {
         const text = `ola raul vindo site da imobiliaria url ${window.location.href}. Name: ${formData.firstName} ${formData.lastName}. Inquiry: ${formData.inquiry}`;
-        const url = `https://wa.me/5544991658351?text=${encodeURIComponent(text)}`;
+        const url = `https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
         window.open(url, '_blank');
     };
 

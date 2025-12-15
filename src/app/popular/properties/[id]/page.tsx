@@ -95,9 +95,15 @@ export default async function PopularPropertyPage({ params }: { params: Promise<
                                     </div>
                                 )}
 
-                                <Button className="w-full h-12 bg-[#25D366] hover:bg-[#128C7E] text-white font-bold text-lg shadow-lg">
-                                    <Phone className="mr-2 h-5 w-5" /> Chamar no WhatsApp
-                                </Button>
+                                <Link
+                                    href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER}?text=${encodeURIComponent(`Olá, vim pelo site e gostaria de saber mais sobre o imóvel ID: ${property.id}`)}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <Button className="w-full h-12 bg-[#25D366] hover:bg-[#128C7E] text-white font-bold text-lg shadow-lg">
+                                        <Phone className="mr-2 h-5 w-5" /> Chamar no WhatsApp
+                                    </Button>
+                                </Link>
                                 <p className="text-xs text-center text-orange-800/60 mt-3">*Simulação estimada. Sujeito a análise de crédito.</p>
                             </div>
 

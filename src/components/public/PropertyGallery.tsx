@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogTrigger, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, Maximize2, X } from "lucide-react";
 
@@ -67,6 +67,7 @@ export function PropertyGallery({ images, title, variant = 'popular' }: Property
                 </DialogTrigger>
 
                 <DialogContent className="max-w-[100vw] w-screen h-screen bg-black/95 border-none p-0 flex items-center justify-center rounded-none data-[state=open]:duration-300">
+                    <DialogTitle className="sr-only">Zoom da Galeria</DialogTitle>
                     <div className="relative w-full h-full flex items-center justify-center p-2">
                         <img
                             src={images[currentIndex]}
