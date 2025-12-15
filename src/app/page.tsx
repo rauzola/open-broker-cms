@@ -30,7 +30,7 @@ export default function SplitLandingPage() {
 
             {/* Center Divider / Text */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 bg-white rounded-full p-4 shadow-2xl border-4 border-slate-100 hidden md:block">
-                <span className="font-bold text-slate-900 px-2 uppercase tracking-widest text-sm">Select Experience</span>
+                <span className="font-bold text-slate-900 px-2 uppercase tracking-widest text-sm">Selecione a Experiência</span>
             </div>
 
             {/* Luxury Side (Right) */}
@@ -49,7 +49,11 @@ export default function SplitLandingPage() {
                         Exclusive properties for the discerning few.
                     </p>
                     <Link href="/luxury">
-                        <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white hover:text-black font-medium px-10 py-6 text-xl rounded-none tracking-widest transition-all">
+                        <Button
+                            variant="ghost"
+                            size="lg"
+                            className="bg-transparent border border-white/30 text-white hover:bg-white hover:text-black font-light px-12 py-8 text-lg rounded-none tracking-[0.3em] transition-all duration-500 hover:tracking-[0.4em] hover:border-white"
+                        >
                             ENTER LUXURY
                         </Button>
                     </Link>
